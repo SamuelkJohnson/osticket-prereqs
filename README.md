@@ -117,7 +117,7 @@ Security
 - Basic permissions as full control
 
 
-![image](https://i.imgur.com/mUXt4vM.jpg)
+![image](https:///mUXt4vM.jpg)
 
 
 Step 8:
