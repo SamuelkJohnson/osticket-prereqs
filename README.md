@@ -143,18 +143,71 @@ Then add new permissions for everyone and give Full Control.
 </p>
 
 
-Step 8:
-osTicket Browser setup
-- Go back to the browser and contine through the osTicket setup
-- After saving username and password to a note pad
-- Download the mysql database exe "HediSQL"
-- Run HediSQL and go through the installation
-- Launch then click new on the bottom left
-- Username as root and password as Password1
-- Right click on unnamed at the top and create database
-- Name it "osTicket"
-- Go back to browser click install now after filling everything in, MySQL Database: osTicket
-- Go to c: inetpub wwwroot osTicket then right click on the setup folder and delete it
-- Go into the include folder and edit the ost-config php and properties then under security go to advanced and change to read and execute only
+Step 8:Download and install HeidiSQL from <a href="https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Google Drive</a> using the provided defaults that are available in the install wizard.
+ <hr>
+<p align="center">
+ <img src="https://i.imgur.com/oImw5w0.png" height="50%" width="50%" alt="completion of heidisql install"/>
+
+Next we will do the following in HeidiSql:
+<ol>
+ <li>Create a new session, username:root/password:Password1</li>
+ <li>Connect to the session</li>
+<li>Create a database called “osTicket”</li>
+ </ol>
+ <p align="center">
+ <img src="https://i.imgur.com/D2QfMEb.png"  height="50%" width="50%" alt="create HeidiSql session"/> 
+ </p>
+ <p align="center">
+ <img src="https://i.imgur.com/3bMHP2K.png" height="50%" width="50%" alt="create database HeidiSql"/> 
+ </p>
+ 
+ Created database for "osTicket":
+ 
+ <p align="center">
+ <img src="https://i.imgur.com/mLg4tOl.png" height="50%" width="50%" alt="create data base osTicket"/> 
+</p>
+<p> After the database is created, we can now enter those details into osTicket Installer 
+<li>MySQL Username: root</li>
+ <li>MySQL Password: Password1</li>
+<li>Click <b><i>“Install Now!”</i></b></li>
+</p>
+<p> Congratulations, hopefully it is installed with no errors!
+</p>
+<p align="center">
+ <img src="https://i.imgur.com/V3GSvvT.png" height="50%" width="50%" alt="congratulations of completion for osTicket"/>
+</p>
+
+Results below are from of choosing for "`Your Staff Control Panel`" or "`Your osTicket URL:`"
+ 
+ <p align="center"><img src="https://i.imgur.com/LhTgI92.png" height="50%" width="50%" alt="available links to choose help desk or admin"/>
+ </p>
+ <p align="center">
+ <img src="https://i.imgur.com/jNkPZNC.jpg" height="65%" width="65%" alt="Admin login for osTicket"/>
+</p>
+
+"`Your osTicket URL`" will direct us to the "`End User`" Portal where Users can submit tickets for assistance from the help desk.
+
+ <p align="center">
+  <img src="https://i.imgur.com/ErvbCg6.png" height="65%" width="65%" alt="End user login page to open/check ticket status"/>
+  </p>
+  <p> - <i>Clean up</i>
+    <ol>
+    <li> Delete: C:\inetpub\wwwroot\osTicket\setup</li>
+    <li> Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</li> 
+    <li><i>Login to the osTicket Admin Panel</i> ([http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php))
+  </p>
+  <p align="center">
+ <img src="https://i.imgur.com/XGHz3lx.png" height="65%" width="65%" alt="delete setup folder"/>
+ </p>
+ 
+Set Permission to "`Read`" only can be acheived by choosing to right-click on '`ost-config.php`' --> select `properties` --> select the '`Security`' tab near the top --> then click the '`Advanced`' button (not pictured below) --> once `advanced settings` is selected, you can now select the '`Everyone`' principle and now we can select to choose '`Read`' only as the preferred permission(s)
+
+ <p align="center">
+ <img src="https://i.imgur.com/AXCIeQN.png"  height="65%" width="65%" alt="read-only permissions"/>
+ </p>
+ <p align="center">
+ <img src="https://i.imgur.com/R11rIMd.png"  height="65%" width="65%" alt="read-only allow is shown for osticketcong file"/>
+ </p>
+ <br/>
 - Finally for admins access http://localhost/osTicket/scp/login.php and click sign in
 - End Users osTicket URL: http://localhost/osTicket/
