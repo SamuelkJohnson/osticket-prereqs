@@ -209,5 +209,6 @@ Set Permission to "`Read`" only can be acheived by choosing to right-click on '`
  <img src="https://i.imgur.com/R11rIMd.png"  height="65%" width="65%" alt="read-only allow is shown for osticketcong file"/>
  </p>
  <br/>
+ 
 - Finally for admins access http://localhost/osTicket/scp/login.php and click sign in
 - End Users osTicket URL: http://localhost/osTicket/
