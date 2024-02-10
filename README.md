@@ -116,8 +116,31 @@ Security
 - Check the name and add then apply and close
 - Basic permissions as full control
 
+ <p align="center">
+ <img src="https://i.imgur.com/Ds8JUvt.png" height="50%" width="50%" alt="properties selection"/>
+ </p>
+ <p align="center">
+ <img src="https://i.imgur.com/rKhcHkW.png" height="50%" width="50%" alt="change permissions"/>
+</p>
+<br/>
+<p align="center">
+<img src="https://i.imgur.com/IxpkEaE.png" height="50%" width="50%" alt="disable inheritance"/>
+ </p>
+<p align="center">
+<img src="https://i.imgur.com/xajjPGK.png" height="50%" width="50%" alt="remove all inherited"/>
+ </p>
+ 
+Then add new permissions for everyone and give Full Control.
 
-![image](https://imgur.com/LOvUpBR.jpg)
+<p align="center">
+ <img src="https://i.imgur.com/Q9XQLXm.png" height="50%" width="50%" alt="add permssions for everyone"/>
+ </p>
+ 
+ After returning to the browser windows with osTicket installer and press '`Continue`', you will now see the below form to complete before continuing.  
+ 
+ <p align="center">
+ <img src="https://i.imgur.com/fjKAgGk.png" height="50%" width="50%" alt="osticket form"/>
+</p>
 
 
 Step 8:
